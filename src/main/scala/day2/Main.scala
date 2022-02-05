@@ -2,8 +2,8 @@ package day2
 
 import scala.io.Source
 
-val inFile = "/home/issac/Learn/aoc2021/src/main/resources/day2/input.txt"
-val inputLines = Source.fromFile(inFile).getLines.toList
+val inFile = "day2/input.txt"
+val inputLines = Source.fromResource(inFile).getLines.toList
 
 case class Coordinates(x: Int, y: Int)
 

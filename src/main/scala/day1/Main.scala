@@ -2,8 +2,8 @@ package day1
 
 import scala.io.Source
 
-val inFile = "/home/issac/Learn/aoc2021/src/main/resources/day1/input.txt"
-val inputLines = Source.fromFile(inFile).getLines.map(_.toInt).toList
+val inFile = "day1/input.txt"
+val inputLines = Source.fromResource(inFile).getLines.map(_.toInt).toList
 
 def countIncreases[T](sumFunc: T => Int)(items: List[T]): Int = {
   val (numIncreases, _) = items.foldLeft[(Int, Option[T])](0, None) {
