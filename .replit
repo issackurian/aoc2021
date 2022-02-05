@@ -1,3 +1,4 @@
+language = "nix"
 run = "echo Welcome to Nix on Replit!"
 
 [nix]
